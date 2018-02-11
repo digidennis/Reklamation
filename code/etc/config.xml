@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+
+    <modules>
+        <Digidennis_Reklamation>
+            <version>0.1.0</version>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </Digidennis_Reklamation>
+    </modules>
+
+    <global>
+
+        <models>
+            <digidennis_reklamation>
+                <class>Digidennis_Reklamation_Model</class>
+            </digidennis_reklamation>
+        </models>
+
+        <blocks>
+            <digidennis_reklamation>
+                <class>Digidennis_Reklamation_Block</class>
+            </digidennis_reklamation>
+        </blocks>
+
+        <helpers>
+            <digidennis_reklamation>
+                <class>Digidennis_Reklamation_Helper</class>
+            </digidennis_reklamation>
+        </helpers>
+
+    </global>
+
+    <default>
+        <payment>
+            <digidennis_reklamation>
+                <model>digidennis_reklamation/reklamation</model>
+                <active>1</active>
+                <order_status>pending</order_status>
+                <title>Reklamation</title>
+                <payment_action>sale</payment_action>
+                <sort_order>1</sort_order>
+            </digidennis_reklamation>
+        </payment>
+    </default>
+
+</config>

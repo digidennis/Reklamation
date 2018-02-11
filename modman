@@ -1,0 +1,4 @@
+code                                app/code/local/Digidennis/Reklamation/
+admindesign/template/*              app/design/adminhtml/default/default/template/digidennis/reklamation/
+design/template/*                   app/design/frontend/base/default/template/digidennis/reklamation/
+Digidennis_Reklamation.xml           app/etc/modules/Digidennis_Reklamation.xml
